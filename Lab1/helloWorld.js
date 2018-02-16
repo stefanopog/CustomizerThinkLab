@@ -44,14 +44,17 @@
             //
             waitFor( function(){
                 //
-                // example customization of the "Updates" title...
+                //  Change the Description
                 //
                 var updatesDescription = document.getElementById("asDesc");
                 var originalText = updatesDescription.textContent;
                 updatesDescription.textContent = "Hello Customizer: " + originalText;
                 updatesDescription.style = "color:#ff0000";
                 //
-                // ... more of your own customization code here please :-) let's see what you come up with!! ...
+                //  Change the Greetings string
+                //  Note that the username of the currently Logged in user can be obtained by means of the
+                //  global variable "lconn.homepage.userName". This variable is defined by the 
+                //  IBM Connections Home page
                 //
                 dojo.query("span.shareSome-title")[0].textContent = "Hello " + lconn.homepage.userName + " -";
                 //
