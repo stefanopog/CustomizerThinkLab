@@ -1,0 +1,21 @@
+{
+      "extensions": [{
+            "payload": {
+                  "match": {
+                        "user-email": []
+                  },
+                  "include-files": [],
+                  "include-repo": {
+                        "name": "Think2018-Customizer-Lab-Org"
+                  }
+            },
+            "name": "",
+            "type": "com.ibm.customizer.ui",
+            "path": "homepage",
+            "application": ""
+      }],
+      "name": "",
+      "description": "",
+      "services": ["Customizer"],
+      "title": ""
+}
