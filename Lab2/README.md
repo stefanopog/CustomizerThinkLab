@@ -1,4 +1,3 @@
-# CustomizerThinkLab
-IBM Connections Customizer Labs for Think2018
+# Profiles Customization exercise
 
-# Lab 2
+![target](docs/target_lab2.gif)
