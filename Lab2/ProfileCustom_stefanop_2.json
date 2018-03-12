@@ -1,0 +1,21 @@
+{
+      "extensions": [{
+            "payload": {
+                  "match": {
+                        "user-email": ["stefanopog@think2018-Customizer.com"]
+                  },
+                  "include-files": ["Lab2/profilesCustomization.css"],
+                  "include-repo": {
+                        "name": "Think2018-Customizer-Lab-Org"
+                  }
+            },
+            "name": "Profile Ext Lab2 stefanopog",
+            "type": "com.ibm.customizer.ui",
+            "path": "profiles",
+            "application": "Profile App Lab2 stefanopog"
+      }],
+      "name": "Profile App Lab2 stefanopog",
+      "description": "Profile Customization from stefanopog",
+      "services": ["Customizer"],
+      "title": "stefanopog Profile Customization"
+}
