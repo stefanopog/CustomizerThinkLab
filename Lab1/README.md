@@ -1,4 +1,4 @@
-# CustomizerThinkLab
+# CustomizerThinkLab - Hello World exercise
 IBM Connections Customizer Labs for Think2018
 
-# Lab 1
+![target](docs/target.gif)
