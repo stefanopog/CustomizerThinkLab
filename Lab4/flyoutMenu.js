@@ -2,70 +2,56 @@
   'use strict';
 
   var $fontAwesomeCSS = $('<link>', {type: 'text/css', rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'});
-
   var $semanticSideBarCSS = $('<link>', {type: 'text/css', rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/sidebar.min.css'});
-
   $('head').append($fontAwesomeCSS);
   $('head').append($semanticSideBarCSS);
-
-  var $style = $('<style></style>', {type: 'text/css'});
 
   var mainStyle =
 	  `
 body {
-margin-top: 0 !important;
+	margin-top: 0 !important;
 }
-
 .menuButtonOverlay {
-position: fixed;
-top: 80px;
-left: 0;
-width: 40px;
-height: 40px;
-display: flex;
-background-color: #112964;
-z-index: 10;
-color: #fff;
-justify-content: center;
-align-items: center;
+	position: fixed;
+	top: 80px;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	background-color: #112964;
+	z-index: 10;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
 }
-
 .menuButtonOverlay:hover {
-cursor: pointer;
+	cursor: pointer;
 }
-
 .ui.sidebar {
-z-index: 3 !important;
-background-color: #112964;
-color: #fff;
+	z-index: 3 !important;
+	background-color: #112964;
+	color: #fff;
 }
-
 .item {
-display: inline-flex;
-width: 100%;
-height: 40px;
-align-items: center;
-justify-content: center;
-transition: .2s all ease-in;
-color: #fff !important;
+	display: inline-flex;
+	width: 100%;
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+	transition: .2s all ease-in;
+	color: #fff !important;
 }
-
 .item:hover {
-background-color: #dedede;
-cursor: pointer;
-transition: .2s all ease-out;
-color: #325c80 !important;
-text-decoration: none !important;
+	background-color: #dedede;
+	cursor: pointer;
+	transition: .2s all ease-out;
+	color: #325c80 !important;
+	text-decoration: none !important;
 }
 `;
-
+  var $style = $('<style></style>', {type: 'text/css'});
   $style.html(mainStyle);
-
   $('body.lotusui').append($style);
-
-  var $activeMenu = $('<div>', {class: 'menuButtonOverlay'});
-
-  var $menu = $('<div>', {class: 'ui sidebar thin left inverted vertical menu push'});
 
   var innerMenu = `
 <center ><i style="font-family: FontAwesome !important;" class="fa fa-volume-up fa-3x" aria-hidden="true"></i></center>
@@ -120,7 +106,9 @@ Adressbuch
 <br />
 `;
 
+  var $activeMenu = $('<div>', {class: 'menuButtonOverlay'});
   $activeMenu.html('<i style="font-family: FontAwesome !important;"  class="fa fa-bars" aria-hidden="true"></i>');
+  var $menu = $('<div>', {class: 'ui sidebar thin left inverted vertical menu push'});
   $menu.html(innerMenu);
 
   $('body.lotusui').append($activeMenu);
