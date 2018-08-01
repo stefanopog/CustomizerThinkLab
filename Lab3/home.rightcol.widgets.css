@@ -1,0 +1,9 @@
+#lotusColRight .lotusSection2.homepage-widget {display: none}
+#activityStreamMain .streamSharebox {display: none}
+#activityStreamMain .filterArea {display: none}
+#activityStreamMain .streamHeaderWrapper #discover {display: none}
+#activityStreamMain .streamHeaderWrapper span[dojoattachpoint=searchContainerNode] {display: none}
+#activityStreamHeader .shareSome-desc {display: none}
+
+#lotusColLeft .lconnHomepageMyPage {display: none}
+#lotusColLeft .lconnHomepageGettingStarted {display: none}

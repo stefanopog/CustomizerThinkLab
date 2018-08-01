@@ -1,0 +1,26 @@
+{
+    "name": "Homepage RightCol Widgets",
+    "title": "Homepage RightCol Widgets",
+    "description": "Hides RightCol Widgets",
+    "services": [
+        "Customizer"
+    ],
+    "state": "enabled",
+    "extensions": [
+        {
+            "name": "HomeRightColWidget",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "home.rightcol.widgets.css"
+                ],
+                "cache-headers": {
+                    "cache-control": "max-age=0"
+                }
+            },
+            "path": "homepage",
+            "application": "Homepage RightCol Widgets",
+            "state": "enabled"
+        }
+    ]
+}
