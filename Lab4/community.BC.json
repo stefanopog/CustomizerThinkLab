@@ -1,0 +1,28 @@
+{
+    "name": "Community BC",
+    "title": "Community BC Changes",
+    "description": "Community BC Changes",
+    "services": [
+        "Customizer"
+    ],
+    "state": "enabled",
+    "extensions": [
+        {
+            "name": "CommunityBC",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "commonTools.js",
+                    "community.BC.js",
+                    "community.BC.css"
+                ],
+                "cache-headers": {
+                    "cache-control": "max-age=0"
+                }
+            },
+            "path": "communities",
+            "application": "Community BC",
+            "state": "enabled"
+        }
+    ]
+}
