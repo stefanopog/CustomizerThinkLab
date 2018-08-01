@@ -1,0 +1,28 @@
+{
+  "name": "Flyout Menu",
+  "title": "Flyout Menu Example",
+  "description": "Example of Flyout Menu",
+  "services": [
+      "Customizer"
+  ],
+  "state": "enabled",
+  "extensions": [
+      {
+          "name": "Flyout Extension",
+          "type": "com.ibm.customizer.ui",
+          "payload": {
+              "include-files": [
+                  "jquery/jquery-3.2.1.min.js",
+                  "jquery/sidebar.min.js",
+                  "flyoutMenu.js"
+              ],
+              "cache-headers": {
+                  "cache-control": "max-age=0"
+              }
+          },
+          "path": "global",
+          "application": "Flyout Menu",
+          "state": "enabled"
+      }
+  ]
+}
